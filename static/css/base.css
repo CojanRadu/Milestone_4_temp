@@ -1,0 +1,132 @@
+body {
+    background: #f9f9f9;
+    font: 400 13px 'Open Sans', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: 300 'Open Sans', sans-serif;
+	margin: 0 0 10px;
+}
+h1 {
+	margin-bottom: 15px;
+}
+.main h1 {
+	margin-top: -6px;
+}
+
+a {
+	color: #E02222;
+}
+a, a:focus, a:hover, a:active {
+	outline: 0;
+ 	text-decoration: none;
+}
+a:hover {
+	color: #E02222;
+	text-decoration: underline;
+}
+
+.header {
+    position: inherit;
+    box-shadow: 0 1px 3px #ddd;
+    background: #fff;
+    margin-bottom: 23px;
+    z-index: 999;
+}
+
+.header .mobi-toggler {
+    float: right;
+    color: #D8D8D8;
+    border: 1px solid #D8D8D8;
+    border-radius: 100% !important;
+    width: 32px;
+    height: 32px;
+    display: none;
+    margin: 30px 0 0 30px;
+    position: relative;
+    background: #fff url('/media/icons/toggler.png') no-repeat 6px 8px;
+}
+
+.header .mobi-toggler:hover {
+    background: #e34f00 url('/media/icons/toggler.png') no-repeat 6px -28px;
+    border-color: #e34f00;
+    color: #fff;
+  }
+  
+.header .mobi-toggler i {
+    display: none;
+}
+
+.site-logo {
+    float: left;
+    margin-right: 67px;
+    padding-top: 28px;
+    padding-bottom: 27px;
+}
+
+/* Navigation */
+.header-navigation {
+	font: 19px "PT Sans Narrow", sans-serif;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	text-transform: uppercase;
+}
+.header-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header-navigation > ul > li {
+	float: left;
+}
+.header-navigation > ul > li > a {
+	color: #767f88;
+	padding: 34px 12px 32px;
+	display: block;	
+}
+
+.header-navigation .dropdown-menu li > a {
+    padding: 10px 15px;
+    font-weight: 400;
+    color: #767f88;
+}
+
+.header-navigation ul > li.active > a,
+.header-navigation ul > li > a:hover,
+.header-navigation ul > li > a:focus,
+.header-navigation ul > li.open > a,
+.header-navigation ul > li.open > a:hover,
+.header-navigation ul > li.open > a:focus {
+	color: #e02222;
+	background: #fcfcfc;
+	text-decoration: none;
+}
+.header-navigation ul > li.active > a {
+	border-bottom: 2px solid #e64f00;
+}
+
+.header-navigation .dropdown-menu > li:first-child {
+    border-top: 2px solid #EA4C1D;
+}
+
+.header-navigation .dropdown-menu {
+    left: auto;
+    top: 100%;  
+    padding: 0;
+    background: #fff;
+    position: absolute;
+    border: none;  
+    box-shadow: 5px 5px rgba(91, 91, 91, 0.2);
+    text-transform: none;
+    font: 13px "Open Sans", sans-serif;
+    letter-spacing: 0;
+    border-radius: 0;
+    z-index: 9999;
+  }
+
+  .dropdown-menu {
+    /* display: block !important; */
+  }
