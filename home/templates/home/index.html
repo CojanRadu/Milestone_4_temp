@@ -7,5 +7,76 @@
 
 
 {% block content %}
-    <h1 class="display-4 text-success">Home Page</h1>
+     <section class="product-tab-area mb--30 mb-md--10">
+                <div class="container">
+                    <div class="row mb--28 mb-md--18 mb-sm--33">
+                        <div class="col-md-3 text-md-left text-center">
+                            <h2>All Products</h2>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="tab-style-1">
+                                <div class="nav nav-tabs justify-content-md-end justify-content-center" id="product-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="new-all-tab" data-toggle="tab" href="#new-all" role="tab" aria-controls="new-all" aria-selected="true">
+                                        <span class="nav-text">All</span>
+                                    </a>
+                                    <a class="nav-item nav-link" id="new-wooden-tab" data-toggle="tab" href="#new-wooden" role="tab" aria-controls="new-wooden" aria-selected="false">
+                                        <span class="nav-text">Armchairs</span>
+                                    </a>
+                                    <a class="nav-item nav-link" id="new-furnished-tab" data-toggle="tab" href="#new-furnished" role="tab" aria-controls="new-furnished" aria-selected="false">
+                                        <span class="nav-text">Rugs</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tab-content" id="product-tab-content">
+                                <div class="tab-pane fade show active" id="new-all" role="tabpanel" aria-labelledby="new-all-tab">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-6 mb--45">
+                                            <div class="ft-product HTfadeInUp">
+                                                <div class="product-inner">
+                                                    <div class="product-image">
+                                                        <figure class="product-image--holder">
+                                                            <img src="{{ MEDIA_URL }}prod-270x300.jpg" alt="Product">
+                                                        </figure>
+                                                        <a href="{% url 'home' %}" class="product-overlay"></a>
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#productModal" class="action-btn">
+                                                                <i class="la la-eye"></i>
+                                                            </a>
+                                                            <a href="wishlist.html" class="action-btn">
+                                                                <i class="la la-heart-o"></i>
+                                                            </a>
+                                                            <a href="wishlist.html" class="action-btn">
+                                                                <i class="la la-repeat"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <div class="product-category">
+                                                            <a href="{% url 'home' %}">Armchair</a>
+                                                        </div>
+                                                        <h3 class="product-title"><a href="product-details.html">Armchair One</a></h3>
+                                                        <div class="product-info-bottom">
+                                                            <div class="product-price-wrapper">
+                                                                <span class="money">$150</span>
+                                                            </div>
+                                                            <a href="cart.html" class="add-to-cart pr--15">
+                                                                <i class="la la-plus"></i>
+                                                                <span>Add To Cart</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 {% endblock %}

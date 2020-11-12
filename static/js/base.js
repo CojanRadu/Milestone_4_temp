@@ -487,6 +487,18 @@
 		});
 	}
 
+	/**********************
+	*BootStrap Tab
+	***********************/ 
+
+	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+		var target = $(e.target).attr("href");
+		var relatedTarget = $(e.relatedTarget).attr("href");
+		var targetChild = $(target).children().find('.ft-product');
+		var relatedTargetChild = $(relatedTarget).children().find('.ft-product');
+		$(relatedTargetChild).removeClass('animated');
+		$(targetChild).addClass('animated');
+	});
 
 	/**********************
 	*WOW Js activation 
